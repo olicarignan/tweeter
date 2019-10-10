@@ -1,0 +1,150 @@
+input {
+  flex: 2;
+  font-family: Bungee;
+  background-color: #4056A1;
+  color: #FFFF;
+}
+
+#text {
+  resize: none;
+  width: 100%;
+  border-bottom: solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #f4f1ec;
+}
+
+#counter {
+  float: right;
+  font-family: Bungee;
+}
+
+article.tweet {
+  border: solid;
+  margin-top: 50px;
+  background-color: #fafcfc;
+  margin-bottom: 50px;
+  border-radius:5px;
+}
+
+article.tweet:hover {
+  box-shadow:
+                1px 1px #6b81cf,
+                2px 2px #6b81cf,
+                3px 3px #6b81cf;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+  border-radius:5px;
+
+}
+
+article.tweet header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+article.tweet img {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+div.user {
+  margin-top: 58px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: source-sans-pro, sans-serif;
+  flex-grow: 1;
+}
+
+div.user-id {
+  margin-top:55px;
+  margin-right: 50px;
+  display: none
+}
+
+article.tweet:hover div.user-id {
+  display: block;
+}
+
+article.tweet p {
+  margin-left: 33px;
+  padding-bottom: 10px;
+  border-bottom: solid;
+  width: 90%;
+}
+
+article.tweet footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+div.time {
+  flex-grow: 1;
+  margin-left: 37px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#new_tweet {
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+  border-width: 0 1px;
+}
+
+#new_tweet.toggled {
+  margin-top: 100px;
+  width: 100%;
+  height: 180px;
+  padding: 5px;
+  transition: height .3s linear, padding-top .3s linear, padding-bottom .3s linear, border-top-width .3s linear, border-top-width .3s linear;
+}
+
+#no_data {
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+  border-width: 0 1px;
+}
+
+#no_data.error {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border-radius: 15px;
+  text-align: center;
+  transition: height .3s linear, padding-top .3s linear, padding-bottom .3s linear, border-top-width .3s linear, border-top-width .3s linear;
+}
+
+#too_long {
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+  border-width: 0 1px;
+}
+
+#too_long.error {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border-radius: 15px;
+  text-align: center;
+  transition: height .3s linear, padding-top .3s linear, padding-bottom .3s linear, border-top-width .3s linear, border-top-width .3s linear;
+}
+
+main.container {
+  width: 40vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
+}

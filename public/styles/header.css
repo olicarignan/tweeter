@@ -1,0 +1,70 @@
+ @media only screen and (min-width: 1024px) { 
+    header.page-header {
+      width: 30vw;
+      display: block;
+      text-align: center;
+      background-color: #f3f2f0;
+      background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    }
+    
+    .page-header img {
+      margin-top: 10vh;
+      margin-left: -10vw;
+      position: fixed;
+      width: 20vw;
+    }
+    
+    .page-header h2 {
+      position: fixed;
+      margin-top: 50vh;
+      margin-left: 8vw;
+    }
+}
+
+@media only screen and (min-width: 768px)and (max-width: 1024px) {
+  header.page-header {
+    width: 30vw;
+    display: block;
+    text-align: center;
+    background-color: #f3f2f0;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  }
+  
+  .page-header img {
+    margin-top: 10vh;
+    margin-left: -10vw;
+    width: 20vw;
+    position: fixed;
+  }
+  
+  .page-header h2 {
+    position: fixed;
+    margin-top: 35vh;
+    margin-left: 7vw;
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header.page-header {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    background-color: #f3f2f0;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  }
+
+  .page-header img {
+    margin-top: 3vh;
+    margin-left: 28vw;
+    position: absolute;
+    width: 20vh;
+  }
+
+  .page-header h2 {
+    position: absolute;
+    margin-top: 27vh;
+    margin-left: 24vw;
+  }
+
+}

@@ -1,0 +1,115 @@
+@media only screen and (min-width: 1024px) { 
+  nav {
+    width: 100vw;
+    height: 12vw;
+    background-color: #4056A1;
+    color: #FFFF;
+    display: flex;
+  }
+  
+  #logo {
+    flex-grow: 1;
+    font-family: Bungee;
+    font-size: 7vh;
+    left: 1.5em;
+    right: 1.5em;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  #logo:hover {
+    text-shadow: 2px 2px 4px gray;
+  }
+  
+  #write_tweet {
+    margin-top: 20px;
+    height: 70px;
+    width: 300px;
+    background-color: #4056A1;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFF;
+    cursor: pointer;
+  }
+  
+  #write_tweet:hover {
+    text-shadow: 2px 2px 2px gray;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    width: 100vw;
+    height: 12vw;
+    background-color: #4056A1;
+    color: #FFFF;
+    display: flex;
+  }
+  
+  #logo {
+    flex-grow: 1;
+    font-family: Bungee;
+    font-size: 5vh;
+    left: 1.5em;
+    right: 1.5em;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  #logo:hover {
+    text-shadow: 2px 2px 4px gray;
+  }
+  
+  #write_tweet {
+    margin-top: 20px;
+    height: 70px;
+    width: 300px;
+    background-color: #4056A1;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFF;
+    cursor: pointer;
+  }
+  
+  #write_tweet:hover {
+    text-shadow: 2px 2px 2px gray;
+  }
+}
+  
+@media only screen and (max-width: 768px) {
+  nav {
+    width: 100vw;
+    background-color: #f3f2f0;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    display: flex;
+  }
+
+  span#logo {
+    font-family: Bungee;
+    font-size: 5vw;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    color: #4056A1;
+    flex-grow: 1;
+  }
+
+  #write_tweet {
+    font-size: 5vw;
+    color: #4056A1;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #f3f2f0;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px)
