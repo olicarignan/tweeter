@@ -95,6 +95,7 @@ div.time {
   padding-bottom: 0;
   height: 0;
   border-width: 0 1px;
+  transition: height .3s linear, padding-top .3s linear, padding-bottom .3s linear, border-top-width .3s linear, border-top-width .3s linear;
 }
 
 #new_tweet.toggled {
@@ -147,4 +148,14 @@ main.container {
   width: 40vw;
   margin-right: 4vw;
   margin-left: 4vw;
+}
+
+div.social-logos img {
+  height: 30px;
+  width: 30px;
+  margin-top: -30px;
+}
+
+#right-img {
+  margin-right: 60px;
 }
