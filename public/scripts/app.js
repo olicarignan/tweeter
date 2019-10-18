@@ -42,7 +42,7 @@ const createTweetElement = function(tweet) {
             </header>
             <p>${escape(tweet.content.text)}</p>
             <footer>
-              <div class="time">${formatAMPM()}</div>
+              <div class="time">${moment(new Date(tweet.created_at)).fromNow()}</div>
               <div class="social-logos">
               <img src="/images/006-pin.png">
               <img src="/images/007-heart.png">
@@ -95,17 +95,17 @@ const loadTweets = () => {
 }
 loadTweets();
 
-const moment = require("moment");
+// const moment = require("moment");
 
-function formatAMPM() {
-  let d = new Date(),
-    minutes = d.getMinutes().toString().length === 1 ? '0' + d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length === 1 ? '0' + d.getHours() : d.getHours(),
-    ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-  let postTime = days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
-  return postTime;
- };
+// function formatAMPM() {
+//   let d = new Date(),
+//     minutes = d.getMinutes().toString().length === 1 ? '0' + d.getMinutes() : d.getMinutes(),
+//     hours = d.getHours().toString().length === 1 ? '0' + d.getHours() : d.getHours(),
+//     ampm = d.getHours() >= 12 ? 'pm' : 'am',
+//     months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'],
+//     days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+//   let postTime = days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
+//   return postTime;
+//  };
 });
 
