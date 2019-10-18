@@ -17,7 +17,8 @@
     .page-header h2 {
       position: fixed;
       margin-top: 50vh;
-      margin-left: 8vw;
+      margin-left: 5vw;
+      font-size: 2.6vw;
     }
 }
 
@@ -39,9 +40,9 @@
   
   .page-header h2 {
     position: fixed;
-    margin-top: 35vh;
-    margin-left: 7vw;
-    font-size: 3vw;
+    margin-top: 38vh;
+    margin-left: 5vw;
+    font-size: 2.6vw
   }
 }
 
@@ -65,6 +66,7 @@
     position: absolute;
     margin-top: 27vh;
     margin-left: 24vw;
+    text-size-adjust: auto;
   }
 
 }
