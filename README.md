@@ -20,3 +20,6 @@ A single-page Twitter Clone. AJAX-based and uses JQuery, HTML5 and CSS3.
 
 - Express
 - Node 5.10.x or above
+- Body Parser
+- JQuery
+- Moment
